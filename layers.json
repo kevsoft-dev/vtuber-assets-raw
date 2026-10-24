@@ -1,0 +1,401 @@
+{
+  "canvas": [
+    768,
+    768
+  ],
+  "note": "draw_order_front_to_back: 1 = paling depan. Tiap PNG berukuran canvas penuh (posisi sudah pas, tinggal ditumpuk).",
+  "left_right_convention": "_L = sisi kiri karakter (tampil di KANAN layar), _R = sisi kanan karakter (kiri layar)",
+  "layers": [
+    {
+      "draw_order_front_to_back": 1,
+      "name": "Hair_Front",
+      "original_name": "front hair",
+      "group": "Part_HairFront",
+      "bbox": {
+        "left": 294,
+        "top": 6,
+        "right": 441,
+        "bottom": 99
+      },
+      "size": [
+        147,
+        93
+      ],
+      "png": "layers/01_Part_HairFront/01_Hair_Front.png"
+    },
+    {
+      "draw_order_front_to_back": 2,
+      "name": "Eyebrow_L",
+      "original_name": "eyebrow-l",
+      "group": "Part_Brows",
+      "bbox": {
+        "left": 375,
+        "top": 57,
+        "right": 397,
+        "bottom": 62
+      },
+      "size": [
+        22,
+        5
+      ],
+      "png": "layers/02_Part_Brows/02_Eyebrow_L.png"
+    },
+    {
+      "draw_order_front_to_back": 3,
+      "name": "Eyebrow_R",
+      "original_name": "eyebrow-r",
+      "group": "Part_Brows",
+      "bbox": {
+        "left": 338,
+        "top": 64,
+        "right": 359,
+        "bottom": 68
+      },
+      "size": [
+        21,
+        4
+      ],
+      "png": "layers/02_Part_Brows/03_Eyebrow_R.png"
+    },
+    {
+      "draw_order_front_to_back": 4,
+      "name": "Eyelash_L",
+      "original_name": "eyelash-l",
+      "group": "Part_EyeL",
+      "bbox": {
+        "left": 375,
+        "top": 64,
+        "right": 400,
+        "bottom": 78
+      },
+      "size": [
+        25,
+        14
+      ],
+      "png": "layers/03_Part_EyeL/04_Eyelash_L.png"
+    },
+    {
+      "draw_order_front_to_back": 5,
+      "name": "Iris_L",
+      "original_name": "irides-l",
+      "group": "Part_EyeL",
+      "bbox": {
+        "left": 380,
+        "top": 66,
+        "right": 393,
+        "bottom": 77
+      },
+      "size": [
+        13,
+        11
+      ],
+      "png": "layers/03_Part_EyeL/05_Iris_L.png"
+    },
+    {
+      "draw_order_front_to_back": 6,
+      "name": "EyeWhite_L",
+      "original_name": "eyewhite-l",
+      "group": "Part_EyeL",
+      "bbox": {
+        "left": 379,
+        "top": 67,
+        "right": 397,
+        "bottom": 78
+      },
+      "size": [
+        18,
+        11
+      ],
+      "png": "layers/03_Part_EyeL/06_EyeWhite_L.png"
+    },
+    {
+      "draw_order_front_to_back": 7,
+      "name": "Eyelash_R",
+      "original_name": "eyelash-r",
+      "group": "Part_EyeR",
+      "bbox": {
+        "left": 338,
+        "top": 70,
+        "right": 361,
+        "bottom": 84
+      },
+      "size": [
+        23,
+        14
+      ],
+      "png": "layers/04_Part_EyeR/07_Eyelash_R.png"
+    },
+    {
+      "draw_order_front_to_back": 8,
+      "name": "Iris_R",
+      "original_name": "irides-r",
+      "group": "Part_EyeR",
+      "bbox": {
+        "left": 347,
+        "top": 73,
+        "right": 359,
+        "bottom": 82
+      },
+      "size": [
+        12,
+        9
+      ],
+      "png": "layers/04_Part_EyeR/08_Iris_R.png"
+    },
+    {
+      "draw_order_front_to_back": 9,
+      "name": "EyeWhite_R",
+      "original_name": "eyewhite-r",
+      "group": "Part_EyeR",
+      "bbox": {
+        "left": 343,
+        "top": 74,
+        "right": 360,
+        "bottom": 83
+      },
+      "size": [
+        17,
+        9
+      ],
+      "png": "layers/04_Part_EyeR/09_EyeWhite_R.png"
+    },
+    {
+      "draw_order_front_to_back": 10,
+      "name": "Mouth",
+      "original_name": "mouth",
+      "group": "Part_Mouth",
+      "bbox": {
+        "left": 368,
+        "top": 93,
+        "right": 376,
+        "bottom": 98
+      },
+      "size": [
+        8,
+        5
+      ],
+      "png": "layers/05_Part_Mouth/10_Mouth.png"
+    },
+    {
+      "draw_order_front_to_back": 11,
+      "name": "Nose",
+      "original_name": "nose",
+      "group": "Part_Nose",
+      "bbox": {
+        "left": 366,
+        "top": 81,
+        "right": 374,
+        "bottom": 88
+      },
+      "size": [
+        8,
+        7
+      ],
+      "png": "layers/06_Part_Nose/11_Nose.png"
+    },
+    {
+      "draw_order_front_to_back": 12,
+      "name": "Face",
+      "original_name": "face",
+      "group": "Part_Face",
+      "bbox": {
+        "left": 335,
+        "top": 48,
+        "right": 403,
+        "bottom": 109
+      },
+      "size": [
+        68,
+        61
+      ],
+      "png": "layers/07_Part_Face/12_Face.png"
+    },
+    {
+      "draw_order_front_to_back": 13,
+      "name": "Headwear",
+      "original_name": "headwear",
+      "group": "Part_EarsAccessory",
+      "bbox": {
+        "left": 386,
+        "top": 37,
+        "right": 402,
+        "bottom": 51
+      },
+      "size": [
+        16,
+        14
+      ],
+      "png": "layers/08_Part_EarsAccessory/13_Headwear.png"
+    },
+    {
+      "draw_order_front_to_back": 14,
+      "name": "Ear_L",
+      "original_name": "ears-l",
+      "group": "Part_EarsAccessory",
+      "bbox": {
+        "left": 394,
+        "top": 64,
+        "right": 408,
+        "bottom": 89
+      },
+      "size": [
+        14,
+        25
+      ],
+      "png": "layers/08_Part_EarsAccessory/14_Ear_L.png"
+    },
+    {
+      "draw_order_front_to_back": 15,
+      "name": "Ear_R",
+      "original_name": "ears-r",
+      "group": "Part_EarsAccessory",
+      "bbox": {
+        "left": 335,
+        "top": 73,
+        "right": 351,
+        "bottom": 95
+      },
+      "size": [
+        16,
+        22
+      ],
+      "png": "layers/08_Part_EarsAccessory/15_Ear_R.png"
+    },
+    {
+      "draw_order_front_to_back": 16,
+      "name": "Topwear",
+      "original_name": "topwear",
+      "group": "Part_Body",
+      "bbox": {
+        "left": 320,
+        "top": 109,
+        "right": 433,
+        "bottom": 263
+      },
+      "size": [
+        113,
+        154
+      ],
+      "png": "layers/09_Part_Body/16_Topwear.png"
+    },
+    {
+      "draw_order_front_to_back": 17,
+      "name": "Bottomwear",
+      "original_name": "bottomwear",
+      "group": "Part_Body",
+      "bbox": {
+        "left": 221,
+        "top": 248,
+        "right": 536,
+        "bottom": 640
+      },
+      "size": [
+        315,
+        392
+      ],
+      "png": "layers/09_Part_Body/17_Bottomwear.png"
+    },
+    {
+      "draw_order_front_to_back": 18,
+      "name": "Neck",
+      "original_name": "neck",
+      "group": "Part_Body",
+      "bbox": {
+        "left": 355,
+        "top": 78,
+        "right": 391,
+        "bottom": 128
+      },
+      "size": [
+        36,
+        50
+      ],
+      "png": "layers/09_Part_Body/18_Neck.png"
+    },
+    {
+      "draw_order_front_to_back": 19,
+      "name": "Shoes",
+      "original_name": "footwear",
+      "group": "Part_Legs",
+      "bbox": {
+        "left": 337,
+        "top": 684,
+        "right": 426,
+        "bottom": 763
+      },
+      "size": [
+        89,
+        79
+      ],
+      "png": "layers/10_Part_Legs/19_Shoes.png"
+    },
+    {
+      "draw_order_front_to_back": 20,
+      "name": "Legs",
+      "original_name": "legwear",
+      "group": "Part_Legs",
+      "bbox": {
+        "left": 327,
+        "top": 387,
+        "right": 435,
+        "bottom": 721
+      },
+      "size": [
+        108,
+        334
+      ],
+      "png": "layers/10_Part_Legs/20_Legs.png"
+    },
+    {
+      "draw_order_front_to_back": 21,
+      "name": "Arm_L",
+      "original_name": "handwear-l",
+      "group": "Part_Arms",
+      "bbox": {
+        "left": 403,
+        "top": 132,
+        "right": 489,
+        "bottom": 404
+      },
+      "size": [
+        86,
+        272
+      ],
+      "png": "layers/11_Part_Arms/21_Arm_L.png"
+    },
+    {
+      "draw_order_front_to_back": 22,
+      "name": "Arm_R",
+      "original_name": "handwear-r",
+      "group": "Part_Arms",
+      "bbox": {
+        "left": 273,
+        "top": 131,
+        "right": 351,
+        "bottom": 405
+      },
+      "size": [
+        78,
+        274
+      ],
+      "png": "layers/11_Part_Arms/22_Arm_R.png"
+    },
+    {
+      "draw_order_front_to_back": 23,
+      "name": "Hair_Back",
+      "original_name": "back hair",
+      "group": "Part_HairBack",
+      "bbox": {
+        "left": 195,
+        "top": 7,
+        "right": 556,
+        "bottom": 377
+      },
+      "size": [
+        361,
+        370
+      ],
+      "png": "layers/12_Part_HairBack/23_Hair_Back.png"
+    }
+  ]
+}
