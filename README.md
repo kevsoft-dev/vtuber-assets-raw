@@ -6,7 +6,7 @@
 ![Contact Telegram](https://img.shields.io/badge/Contact-t.me%2Fkevsoft__dev-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
 
 <p align="center">
-  <img src="./thumb.png" alt="Character Preview" width="400"/>
+  <img src="./VTUBER ASSETS_20261024_192359_0000.png" alt="Character Preview" width="400"/>
 </p>
 
 This is a raw PSD + PNG asset pack, fully organized and ready for the Live2D rigging process. The standard canvas size is **768 × 768 px**, consisting of a total of **23 layers** neatly split into **12 folders (Parts)**.
