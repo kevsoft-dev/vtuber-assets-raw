@@ -1,4 +1,4 @@
-# Live2D Rigging Pack — raw item
+# Live2D Rigging Pack — Raw Asset
 
 ![Made by Kevsoft](https://img.shields.io/badge/Made%20by-Kevsoft-blue?style=for-the-badge)
 ![Live2D Ready](https://img.shields.io/badge/Live2D-Cubism%20Ready-brightgreen?style=for-the-badge)
@@ -6,82 +6,87 @@
 ![Contact Telegram](https://img.shields.io/badge/Contact-t.me%2Fkevsoft__dev-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
 
 <p align="center">
+  <img src="./thumb.png" alt="Character Preview" width="400"/>
+</p>
+
+This is a raw PSD + PNG asset pack, fully organized and ready for the Live2D rigging process. The standard canvas size is **768 × 768 px**, consisting of a total of **23 layers** neatly split into **12 folders (Parts)**.
+
+---
+
+## 🎨 Rigging & Character Design Services (Kevsoft Services)
+
+> **Need a custom model or want a ready-to-go setup without dealing with the hassle of rigging?**  
+> We at **Kevsoft** also provide professional services for:
+> - 🖌️ **VTuber / Live2D Character Design & Illustration** (Layer-cut / *rig-ready*)
+> - ⚙️ **Live2D Rigging Services** (Smooth physics, custom expressions, up to full-body rigging)
+> 
+> 📩 **Reach out via Telegram:** [t.me/kevsoft_dev](https://t.me/kevsoft_dev) for consultations, orders, or commission info!
+
+---
+
+## 📦 Package Contents
+
+| File / Folder | Function |
+|---|---|
+| `model_live2d.psd` | Main PSD file ready to be imported directly into Live2D Cubism. All layer/folder names are clean, Normal 100% blend mode, consisting of 12 Parts & 23 layers. |
+| `layers/NN_Part_xxx/NN_Nama.png` | Individual PNG layers with full canvas size (positions already aligned, just stack them). The numbers at the front indicate the layer order (`01` = front-most). |
+| `layers.json` | Layer data notes (new name, original name, folder, order, bounding box position, and dimensions). |
+| `preview.png` | Composite image of all layers combined with a transparent background. |
+
+---
+
+<p align="center">
   <img src="./preview.png" alt="Character Preview" width="400"/>
 </p>
 
-Ini adalah bahan mentah PSD + PNG yang sudah dikelompokkan dan siap digunakan untuk proses *rigging* Live2D. Ukuran canvas standar **768 × 768 px**, terdiri dari total **23 layer** yang telah dibagi rapi ke dalam **12 folder (Part)**.
 
----
+## 🛠️ How to Use in Cubism Editor
 
-## 🎨 Jasa Rigging & Desain Karakter (Kevsoft Services)
+1. Open Cubism Editor, select **`File → Open`**, then load **`model_live2d.psd`**. The layers will automatically convert into ArtMeshes and folders into Parts.
+2. **Set up Clipping Masks** for the eyes so the irises don't bleed outside the whites of the eyes:
+   * `Iris_L` → clipped to `EyeWhite_L`
+   * `Iris_R` → clipped to `EyeWhite_R`
+3. Generate Auto Meshes, then start the rigging process per Part. Here is a guide to standard parameters you can use:
 
-> **Butuh model custom atau mau terima beres tanpa pusing ngerigging?**  
-> Kami di **Kevsoft** juga menyediakan layanan profesional untuk:
-> - 🖌️ **Desain & Ilustrasi Karakter VTuber / Live2D** (Siap potong layer / *rig-ready*)
-> - ⚙️ **Jasa Rigging Live2D** (Physics halus, ekspresi custom, hingga full body rigging)
-> 
-> 📩 **Hubungi kami via Telegram:** [t.me/kevsoft_dev](https://t.me/kevsoft_dev) untuk konsultasi, pemesanan, atau info *commission* lebih lanjut!
-
----
-
-## 📦 Isi Paket
-
-| File / Folder | Fungsi |
+| Part / Section | Common Parameters |
 |---|---|
-| `model_live2d.psd` | File PSD utama yang siap di-*import* langsung ke Live2D Cubism. Semua nama layer/folder sudah rapi, blend mode Normal 100%, terdiri dari 12 Part & 23 layer. |
-| `layers/NN_Part_xxx/NN_Nama.png` | Kumpulan PNG per layer dengan ukuran *full canvas* (posisi sudah pas, tinggal ditumpuk). Nomor di depan nama file menandakan urutan layer (`01` = paling depan). |
-| `layers.json` | Catatan data layer (nama baru, nama asli, folder, urutan, posisi bbox, dan ukuran). |
-| `preview.png` | Gambar komposit/gabungan semua layer dengan background transparan. |
-
----
-
-## 🛠️ Cara Pakai di Cubism Editor
-
-1. Buka Cubism Editor, pilih **`File → Open`** lalu masukkan **`model_live2d.psd`**. Layer akan otomatis menjadi *ArtMesh* dan folder menjadi *Part*.
-2. **Atur Clipping Mask** pada mata agar iris tidak keluar dari area mata putih:
-   * `Iris_L` → clip ke `EyeWhite_L`
-   * `Iris_R` → clip ke `EyeWhite_R`
-3. Generate *Auto Mesh*, lalu mulai proses *rigging* per Part. Berikut panduan parameter standar yang bisa digunakan:
-
-| Part / Bagian | Parameter Umum |
-|---|---|
-| `Part_HairFront`, `Part_Face`, `Part_EarsAccessory`, `Part_Brows` | `ParamAngleX`, `ParamAngleY`, `ParamAngleZ` (mengikuti gerakan kepala) |
+| `Part_HairFront`, `Part_Face`, `Part_EarsAccessory`, `Part_Brows` | `ParamAngleX`, `ParamAngleY`, `ParamAngleZ` (follows head movement) |
 | `Part_Brows` | `ParamBrowLY`, `ParamBrowRY` |
-| `Part_EyeL`, `Part_EyeR` | `ParamEyeLOpen`, `ParamEyeROpen` (bulu mata & mata putih), `ParamEyeBallX`, `ParamEyeBallY` (iris) |
+| `Part_EyeL`, `Part_EyeR` | `ParamEyeLOpen`, `ParamEyeROpen` (eyelashes & eye whites), `ParamEyeBallX`, `ParamEyeBallY` (iris) |
 | `Part_Mouth` | `ParamMouthOpenY`, `ParamMouthForm` |
 | `Part_Body`, `Part_Arms`, `Part_Legs` | `ParamBodyAngleX`, `ParamBodyAngleY`, `ParamBodyAngleZ`, `ParamBreath` |
-| `Part_HairFront`, `Part_HairBack` | Setup Physics (`ParamHairFront`, `ParamHairSide`, `ParamHairBack`) |
+| `Part_HairFront`, `Part_HairBack` | Physics setup (`ParamHairFront`, `ParamHairSide`, `ParamHairBack`) |
 
 ---
 
-## 📑 Urutan Layer (Depan → Belakang)
+## 📑 Layer Order (Front → Back)
 
-`Hair_Front` → `Eyebrow_L/R` → `Eyelash` / `Iris` / `EyeWhite` (Kiri, lalu Kanan) → `Mouth` → `Nose` → `Face` → `Headwear`, `Ear_L/R` → `Topwear`, `Bottomwear`, `Neck` → `Shoes`, `Legs` → `Arm_L/R` → `Hair_Back`
+`Hair_Front` → `Eyebrow_L/R` → `Eyelash` / `Iris` / `EyeWhite` (Left, then Right) → `Mouth` → `Nose` → `Face` → `Headwear`, `Ear_L/R` → `Topwear`, `Bottomwear`, `Neck` → `Shoes`, `Legs` → `Arm_L/R` → `Hair_Back`
 
-> **Note Konvensi Sisi:**  
-> Penamaan `_L` merujuk pada **sisi kiri karakter** (terlihat di sebelah **kanan** layar). Sebaliknya, `_R` merujuk pada **sisi kanan karakter** (terlihat di sebelah **kiri** layar). Jika *tracking* mata terbalik saat diuji, cukup tukar parameter `ParamEyeLOpen` ↔ `ParamEyeROpen`.
+> **Side Convention Note:**  
+> The `_L` tag refers to the **character's left side** (appearing on the **right** side of your screen). Conversely, `_R` refers to the **character's right side** (appearing on the **left** side of your screen). If tracking looks reversed during testing, just swap the `ParamEyeLOpen` ↔ `ParamEyeROpen` parameters.
 
 ---
 
-## 🔄 Perubahan dari PSD Asli
+## 🔄 Changes from the Original PSD
 
-* **Penghapusan Layer Mask:** Mask bawaan di file asli dihapus karena menyebabkan efek alpha ganda yang membuat garis tepi tampak pudar.
-* **Perbaikan Urutan Layer:** Bulu mata dipindah ke atas iris & mata putih, serta alis dipindah ke atas wajah (tetap di bawah poni) agar sesuai dengan kebutuhan *rigging*.
-* **Standardisasi Penamaan:** Nama layer diubah ke format ASCII yang rapi dan unik untuk mencegah *error* saat *import*:
+* **Removed Layer Masks:** Native masks from the original file were stripped out because they caused double-alpha issues that made edges look faded.
+* **Fixed Layer Hierarchy:** Eyelashes were moved above the iris and eye whites, and eyebrows were moved above the face (still below the bangs) to suit proper rigging workflows.
+* **Standardized Naming:** Layer names were converted to clean, unique ASCII formats to prevent errors during import:
   * `front hair` → `Hair_Front`
   * `irides-l` → `Iris_L`
   * `handwear-l` → `Arm_L`
   * `footwear` → `Shoes`
-* **Integritas Piksel:** Piksel tiap layer dijamin 100% sama dengan asset asli tanpa ada pemotongan/perubahan gambar.
+* **Pixel Integrity:** Every layer's pixels are guaranteed 100% identical to the original assets with no cropping or image alterations.
 
 ---
 
-## ⚠️ Catatan Penting Sebelum Rigging
+## ⚠️ Important Notes Before Rigging
 
-* **Resolusi Rendah:** Ukuran komponen cukup kecil (Wajah: 68×61 px, Mulut: 8×5 px, Hidung: 8×7 px, Iris: 12×9 px). Masih bisa di-*rig*, namun berisiko buram saat di-zoom. Disarankan melakukan *upscale* 4× (menggunakan Real-ESRGAN / waifu2x) dan menyesuaikan ukuran canvas PSD sebelum *rigging*.
-* **Variasi Ekspresi:** Belum tersedia layer cadangan untuk ekspresi mulut terbuka lebar, mata merem, atau variasi bentuk lainnya. Gerakan buka-tutup perlu dibuat melalui *deform/warp* atau menggambar layer tambahan secara manual.
-* **Elemen Tertutup Poni:** Alis dan `Headwear` tertutup oleh poni pada ilustrasi asli. Layer tetap ada dan bisa di-*rig*, namun baru terlihat jika poni digerakkan atau dibuat transparan.
-* **Verifikasi File:** Struktur PSD telah diverifikasi secara matematis & programatik. Jika menemukan kendala saat dimuat ke Cubism Editor, silakan hubungi tim teknis kami via Telegram.
+* **Low Resolution:** Component sizes are relatively small (Face: 68×61 px, Mouth: 8×5 px, Nose: 8×7 px, Iris: 12×9 px). It's still fully riggable, but there's a risk of blurriness when zooming in. It is recommended to 4× upscale (using Real-ESRGAN / waifu2x) and adjust the PSD canvas size before starting your rigging.
+* **Expression Variations:** No spare layers are included for wide-open mouths, closed eyes, or other shape variants. Open/close motions will need to be handled via warping/deforming or drawing extra layers manually.
+* **Elements Hidden by Bangs:** Eyebrows and `Headwear` are covered by the bangs in the original illustration. The layers are still there and can be rigged, but they'll only become visible if the bangs move or are toggled transparent.
+* **File Verification:** The PSD structure has been verified both mathematically and programmatically. If you run into any issues loading it into Cubism Editor, hit up our tech team on Telegram.
 
 ---
 
